@@ -1,49 +1,35 @@
 /** PAGINA REFERENTE AOS EVENTOS */
 import React from 'react';
-import {Text, StyleSheet, SafeAreaView, FlatList} from 'react-native';
+import { Text, StyleSheet, Alert, TouchableOpacity } from 'react-native';
 
-export default function Eventos(){
-
-    const listEvent=[
-        {
-            name:'Palestra',
-            local:'Rua Primavera',
-        },
-        {
-            name:'Rock in Rio',
-            local: 'RIo de janeiro',
-        },
-        {
-            name:'Simposio',
-            local: 'Teatro iguatemi',
-        },
-    ];
+export default function Eventos({ local, name, onPress }) {
 
 
-    return(
-
-        <SafeAreaView style={styles.cointainer}>
-            <FlatList
-            data={listEvent}
-            renderItem={({item})=><Text style={styles.item}>{item.name}</Text>}
-            />
-        </SafeAreaView>        
+    return (
+        <TouchableOpacity onPress={onPress} style={styles.cointainer}>
+            <Text style={styles.item}> {name} </Text>
+            <Text style={styles.item}> {local} </Text>            
+        </TouchableOpacity>
     )
 }
 
 const styles = StyleSheet.create({
-    cointainer:{        
-        marginTop: 10,
-        marginBottom: 30,
-        border: 'solid',
+    cointainer: {
+        width: 300,
+        height: 120,
+        marginTop: 5,
+        marginBottom: 10,
         borderRadius: 15,
-        width: 250,
-        padding: 50,
+        padding: 30,
+        backgroundColor: '#4D76E1',
     },
-    item:{
-        flex:1,
-        marginBottom: 6,
-        padding: 5
+    item: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',    
+        color: '#fff',
+        fontSize: 16,
+        flexDirection: "row"
 
     }
 })
