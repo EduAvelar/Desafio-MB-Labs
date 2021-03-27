@@ -15,10 +15,9 @@ export default function Header() {
 
 const styles = StyleSheet.create({
     cointainer: {
-        flex: 1,
-        position: 'absolute',
 
-        marginTop: -725,
+        position: 'relative',
+        //marginTop: 100,
         width: 430,
         height: 100,
         backgroundColor: '#4D76E1',
@@ -28,7 +27,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 25,
-        color:'#fff',
+        color: '#fff',
         marginLeft: 150,
         marginTop: 40,
     }

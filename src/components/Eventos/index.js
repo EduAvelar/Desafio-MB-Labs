@@ -15,9 +15,9 @@ export default function Eventos({ local, name, onPress }) {
 
 const styles = StyleSheet.create({
     cointainer: {
-        width: 300,
-        height: 120,
-        marginTop: 5,
+        width: 270,
+        height: 110,
+        marginTop: 40,
         marginBottom: 10,
         borderRadius: 15,
         padding: 30,
@@ -29,7 +29,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',    
         color: '#fff',
         fontSize: 16,
-        flexDirection: "row"
-
+        flexDirection: "row",
     }
 })
