@@ -51,7 +51,6 @@ export default function Home({ navigation }) {
 const styles = StyleSheet.create({
     cointainer: {
         flex: 1,
-
         alignItems: 'center',
         fontSize: 20,
         backgroundColor: '#C2C7F1',

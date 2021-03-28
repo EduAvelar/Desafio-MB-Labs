@@ -1,6 +1,6 @@
 /** PAGINA REFERENTE AOS EVENTOS */
 import React from 'react';
-import { Text, StyleSheet, Alert, TouchableOpacity } from 'react-native';
+import { Text, StyleSheet, TouchableOpacity } from 'react-native';
 
 export default function Eventos({ local, name, onPress }) {
 

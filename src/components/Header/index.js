@@ -2,8 +2,6 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import Menu from '../Menu';
 
-
-
 export default function Header() {
     return (
         <View style={styles.cointainer}>
@@ -15,9 +13,7 @@ export default function Header() {
 
 const styles = StyleSheet.create({
     cointainer: {
-
         position: 'relative',
-        //marginTop: 100,
         width: 430,
         height: 100,
         backgroundColor: '#4D76E1',

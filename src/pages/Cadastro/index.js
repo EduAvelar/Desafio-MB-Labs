@@ -6,8 +6,6 @@ import Header from '../../components/Header';
 export default function Cadastro() {
 
 
-
-
     return (
         <SafeAreaView style={styles.cointainer}>
             <Header />
@@ -17,6 +15,7 @@ export default function Cadastro() {
                 <Text style={styles.label} >Nome: </Text>
                 <TextInput
                     style={styles.input}
+
                 />
 
                 <Text style={styles.label}>CPF: </Text>
@@ -24,6 +23,7 @@ export default function Cadastro() {
                     style={styles.input}
                     keyboardType="numeric"
                     maxLength={11}
+
                 />
 
                 <Text style={styles.label}>Telefone: </Text>

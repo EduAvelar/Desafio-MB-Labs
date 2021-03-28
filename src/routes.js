@@ -1,11 +1,11 @@
 import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import { NavigationContainer } from '@react-navigation/native';
 
 /** import das páginas */
 import Home from './pages/Home';
 import Cadastro from './pages/Cadastro';
 import Ingresso from './pages/Ingresso';
+
 
 const Drawer = createDrawerNavigator();
 
@@ -25,7 +25,6 @@ function Routes() {
                 component={Ingresso}
             />
         </Drawer.Navigator>
-
     )
 }
 
