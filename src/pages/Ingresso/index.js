@@ -9,10 +9,11 @@ export default function Ingresso() {
 
             <View style={styles.cointainerImage}>
                 <Image
-                    source={require('../../../assets/music-notes.png')}
+                    source={require('../../../assets/conference.png')}
+
                     style={styles.image}
                 />
-                <Text style={styles.titleImage}> Rock in Rio </Text>
+                <Text style={styles.titleImage}> Palestra </Text>
             </View>
 
             <View >
@@ -22,6 +23,8 @@ export default function Ingresso() {
                     distracted by the readable content
                     of a page when looking at its layout.
                 </Text>
+
+                <Text style={styles.price}>R$ 100,00</Text>
             </View>
             <TouchableOpacity
                 style={styles.button}
@@ -64,13 +67,20 @@ const styles = StyleSheet.create({
         marginTop: 50,
         marginBottom: 10,
         marginRight: 15,
-        marginLeft: 12,
+        marginLeft: 30,
     },
     description: {
         color: '#4D76E1',
         fontSize: 22,
         marginRight: 12,
-        marginLeft: 12,
+        marginLeft: 30,
+        marginBottom: 60,
+    },
+    price: {
+        color: '#4D76E1',
+        fontSize: 22,
+        marginRight: 12,
+        marginLeft: 30,
         marginBottom: 60,
     },
     button: {

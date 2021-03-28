@@ -9,23 +9,23 @@ export default function Home({ navigation }) {
     const listEvent = [
         {
             name: 'Palestra',
-            local: 'Teatro',
+            local: 'Teatro Iguatemi',
         },
         {
-            name: 'Rock in Rio',
-            local: 'Rio de janeiro',
+            name: 'Simpósio',
+            local: 'USP',
         },
         {
             name: 'Palestra',
-            local: 'São Paulo'
+            local: 'Unicamp'
         },
         {
-            name: 'Lolapalluza',
-            local: 'São Paulo'
+            name: 'Feira de Produtos',
+            local: 'Expo São Paulo'
         },
         {
-            name: 'Teste',
-            local: 'Teste'
+            name: 'Palestras',
+            local: 'Centro de Exposições'
         },
     ];
 
