@@ -1,7 +1,8 @@
 import React from 'react';
-import { View, Text, StyleSheet, SafeAreaView, FlatList, Alert } from 'react-native';
+import { View, Text, StyleSheet, SafeAreaView, FlatList } from 'react-native';
 import Eventos from '../../components/Eventos';
 import Header from '../../components/Header';
+
 
 export default function Home({ navigation }) {
 
@@ -38,10 +39,11 @@ export default function Home({ navigation }) {
                     data={listEvent}
                     renderItem={({
                         item
-                    }) => <Eventos name={item.name} local={item.local} onPress={() => navigation.navigate('Comprar Ingresso')} />}
+                    }) => <Eventos name={item.name} local={item.local} onPress={
+                        () => navigation.navigate('Comprar Ingresso'
+                        )} />}
                 />
             </View>
-
         </SafeAreaView>
     )
 }

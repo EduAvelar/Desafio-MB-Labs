@@ -48,14 +48,12 @@ export default function Cadastro() {
                 <Text style={styles.label}>Senha: </Text>
                 <TextInput
                     style={[styles.input, styles.mb20]}
+                    secureTextEntry={true}
                 />
 
                 <TouchableOpacity style={styles.button} onPress={() => Alert.alert('Cadastro realizado com sucesso!!')}>
                     <Text style={styles.buttonText}> Cadastrar </Text>
                 </TouchableOpacity>
-
-
-
 
             </View>
 
@@ -93,9 +91,11 @@ const styles = StyleSheet.create({
         marginTop: 10,
     },
     input: {
-        color: '#4D76E1',
+        color: '#000',
+        padding: 5,
         backgroundColor: '#fff',
-        fontSize: 22,
+        fontSize: 18,
+        borderRadius: 5,
     },
     mb20: {
         marginBottom: 40,
@@ -108,6 +108,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     buttonText: {
-        color: '#fff'
+        color: '#fff',
+        fontSize: 22,
     }
 })

@@ -4,11 +4,10 @@ import { Text, StyleSheet, Alert, TouchableOpacity } from 'react-native';
 
 export default function Eventos({ local, name, onPress }) {
 
-
     return (
         <TouchableOpacity onPress={onPress} style={styles.cointainer}>
             <Text style={styles.item}> {name} </Text>
-            <Text style={styles.item}> {local} </Text>            
+            <Text style={styles.item}> {local} </Text>
         </TouchableOpacity>
     )
 }
@@ -26,7 +25,7 @@ const styles = StyleSheet.create({
     item: {
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center',    
+        alignItems: 'center',
         color: '#fff',
         fontSize: 16,
         flexDirection: "row",

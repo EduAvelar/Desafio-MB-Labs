@@ -1,30 +1,34 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image, Button, Alert } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity, Alert } from 'react-native';
 import Header from '../../components/Header';
 
 export default function Ingresso() {
     return (
         <View style={styles.cointainer}>
             <Header />
-            <Image
-                source={require('../../../assets/music-notes.png')}
-                style={styles.image}
-            />
-            <Text style={styles.titleImage}> Rock in Rio </Text>
+
+            <View style={styles.cointainerImage}>
+                <Image
+                    source={require('../../../assets/music-notes.png')}
+                    style={styles.image}
+                />
+                <Text style={styles.titleImage}> Rock in Rio </Text>
+            </View>
 
             <View >
-                <Text style={styles.title}>Descrição</Text>
+                <Text style={styles.titleDescription}>Descrição</Text>
                 <Text style={styles.description}>
                     It is a long established fact that a reader will be
                     distracted by the readable content
                     of a page when looking at its layout.
                 </Text>
             </View>
-            <Button
-                title="Comprar Ingresso"
-                color="#4D76E1"
+            <TouchableOpacity
+                style={styles.button}
                 onPress={() => Alert.alert('Compra realizada com sucesso!!')}
-            />
+            >
+                <Text style={styles.buttonText}> Comprar Ingresso </Text>
+            </TouchableOpacity>
         </View>
     )
 }
@@ -33,30 +37,32 @@ const styles = StyleSheet.create({
 
     cointainer: {
         flex: 1,
-
         alignItems: 'center',
         backgroundColor: '#C2C7F1',
     },
+    cointainerImage: {
+        flexDirection: 'row',
+        marginTop: 10,
+    },
     image: {
-        marginTop: 20,
+        marginTop: 40,
         marginBottom: 12,
-        marginLeft: 5,
+        marginRight: 50,
         width: 120,
         height: 120,
-        borderWidth: 5,
     },
     titleImage: {
         color: '#4D76E1',
-        marginTop: 15,
-        marginBottom: 30,
+        marginTop: 50,
+        marginRight: 90,
+        marginBottom: 70,
         fontSize: 22,
-
     },
-    title: {
+    titleDescription: {
         color: '#4D76E1',
         fontSize: 22,
-        marginTop: 90,
-        marginBottom: 0,
+        marginTop: 50,
+        marginBottom: 10,
         marginRight: 15,
         marginLeft: 12,
     },
@@ -65,7 +71,19 @@ const styles = StyleSheet.create({
         fontSize: 22,
         marginRight: 12,
         marginLeft: 12,
-        marginBottom: 65,
+        marginBottom: 60,
     },
-
+    button: {
+        backgroundColor: "#4D76E1",
+        borderRadius: 10,
+        height: 50,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 60,
+        marginRight: 160,
+    },
+    buttonText: {
+        color: '#fff',
+        fontSize: 22,
+    }
 })
